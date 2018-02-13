@@ -5,14 +5,14 @@ alias reloaddns="dscacheutil -flushcache && sudo killall -HUP mDNSResponder"
 alias ll="$(brew --prefix coreutils)/libexec/gnubin/ls -ahlF --color --group-directories-first"
 alias weather="curl -4 http://wttr.in"
 alias shrug="echo '¯\_(ツ)_/¯' | pbcopy"
+alias zshconfig="code ~/.zshrc"
+alias ohmyzsh="code ~/.oh-my-zsh"
+alias cl="clear"
 
 # Directories
 alias dotfiles="cd $DOTFILES"
 alias library="cd $HOME/Library"
 alias sites="cd $HOME/Sites"
-
-# Laravel
-alias a="php artisan"
 
 # Vagrant
 alias v="vagrant global-status"
@@ -38,3 +38,12 @@ alias gfpr="echo git fetch upstream pull//head"
 
 # Webdriverio
 alias selenium_server="cd ~/webdriverio-test && java -jar -Dwebdriver.gecko.driver=./geckodriver selenium-server-standalone-3.7.1.jar"
+
+# Spotify
+
+alias spp="spotify play"
+alias spalb="spotify play album"
+alias spart="spotify play artist"
+alias splis="spotify play list"
+alias spn="spotify next"
+alias spprev="spotify prev"

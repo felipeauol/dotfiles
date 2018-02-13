@@ -96,7 +96,7 @@ source $ZSH/oh-my-zsh.sh
 # For a full list of active aliases, run `alias`.
 #
 # Example aliases
-source $HOME/.aliases
+source $HOME/aliases.zsh
 
 # The next line updates PATH for the Google Cloud SDK.
 if [ -f '/Users/felipedeoliveira/google-cloud-sdk/path.zsh.inc' ]; then source '/Users/felipedeoliveira/google-cloud-sdk/path.zsh.inc'; fi
