@@ -96,37 +96,7 @@ source $ZSH/oh-my-zsh.sh
 # For a full list of active aliases, run `alias`.
 #
 # Example aliases
-alias zshconfig="code ~/.zshrc"
-alias ohmyzsh="code ~/.oh-my-zsh"
-
-# Spotify
-alias sp="spotify"
-alias spp="spotify play"
-alias spn="spotify next"
-alias spv="spotify prev"
-alias spvd="spotify vol down"
-alias spvu="spotify vol up"
-alias spt="spotify status"
-alias spalb="spotify play album"
-alias spart="spotify play artist"
-alias splis="spotify play list"
-
-#Docker
-alias docr="docker run"
-alias docps="docker ps"
-alias docim="docker images"
-alias docpt="docker port"
-alias docst="docker stop"
-alias docrm="docker rm"
-alias docrm-all="docker stop $(docker ps -a -q -f status=exited) && docker rm $(docker ps -a -q -f status=exited)"
-
-# Git
-alias grst="git fetch upstream staging && git reset upstream/staging --hard"
-alias gmsq="git merge --squash FETCH_HEAD"
-alias gfpr="echo git fetch upstream pull//head"
-
-# Webdriverio
-alias selenium_server="cd ~/webdriverio-test && java -jar -Dwebdriver.gecko.driver=./geckodriver selenium-server-standalone-3.7.1.jar"
+source $HOME/.aliases
 
 # The next line updates PATH for the Google Cloud SDK.
 if [ -f '/Users/felipedeoliveira/google-cloud-sdk/path.zsh.inc' ]; then source '/Users/felipedeoliveira/google-cloud-sdk/path.zsh.inc'; fi
