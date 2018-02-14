@@ -40,6 +40,7 @@ brew 'php72-imagick'
 brew 'mysql'
 
 # Apps
+cask '1password'
 cask 'cloudapp'
 cask 'docker'
 cask 'firefox'
@@ -61,7 +62,6 @@ cask 'virtualbox-extension-pack'
 cask 'visual-studio-code'
 cask 'vlc'
 
-
 # Fonts
 cask 'font-inconsolata-for-powerline'
 cask 'font-source-code-pro-for-powerline'
@@ -70,6 +70,5 @@ cask 'font-source-sans-pro'
 cask 'font-source-serif-pro'
 
 # Install Mac App Store apps
-mas '1Password', id: 443987910
 mas 'Magnet', id: 441258766 
 mas 'CopyClip', id: 595191960
