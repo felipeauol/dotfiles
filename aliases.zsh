@@ -9,10 +9,22 @@ alias zshconfig="code ~/.zshrc"
 alias ohmyzsh="code ~/.oh-my-zsh"
 alias cl="clear"
 
+# Apps
+alias vscode="open -a Visual\ Studio\ Code"
+alias sqlpro="open -a Sequel\ Pro"
+alias slack="open -a Slack"
+alias safari="open -a Safari"
+alias firefox="open -a Firefox"
+alias firefoxdev="open -a Firefox\ Developer\ Edition"
+alias bear="open -a Bear"
+
 # Directories
 alias dotfiles="cd $DOTFILES"
 alias library="cd $HOME/Library"
 alias sites="cd $HOME/Sites"
+alias ss="cd /Volumes/dev/sharpspring"
+alias payments="cd /Volumes/dev/payments"
+alias femui="cd /Volumes/dev/femui"
 
 # Vagrant
 alias v="vagrant global-status"
@@ -23,16 +35,17 @@ alias vreload="vagrant reload"
 alias vrebuild="vagrant destroy --force && vagrant up"
 
 #Docker
-alias docr="docker run"
-alias docps="docker ps"
-alias docim="docker images"
-alias docpt="docker port"
-alias docst="docker stop"
-alias docrm="docker rm"
 alias docrm-all="docker stop $(docker ps -a -q -f status=exited) && docker rm $(docker ps -a -q -f status=exited)"
+alias dps="docker ps"
+alias dpa="docker ps -a"
+alias di="docker images"
+alias dip="docker inspect --format '{{ .NetworkSettings.IPAddress }}'"
+alias de="docker exec"
+alias dex="docker exec -it"
 
 # Git
 alias grst="git fetch upstream staging && git reset upstream/staging --hard"
+alias ngrst="git fetch upstream staging-new && git reset upstream/staging-new --hard"
 alias gmsq="git merge --squash FETCH_HEAD"
 alias gfpr="echo git fetch upstream pull//head"
 
@@ -47,3 +60,13 @@ alias spart="spotify play artist"
 alias splis="spotify play list"
 alias spn="spotify next"
 alias spprev="spotify prev"
+alias sps="spotify status"
+
+#kubectl
+
+alias k='kubectl'
+alias k2='kubectl --context=cst2'
+alias k3='kubectl --context=cst3'
+alias k4='kubectl --context=cst4'
+alias kc='kubectl config use-context'
+alias ks='kubectl --namespace=staging'
