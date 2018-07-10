@@ -1,0 +1,118 @@
+{
+	"name": "rainbow-csv",
+	"displayName": "Rainbow CSV",
+	"description": "Highlight CSV and TSV files in different colors",
+	"version": "0.4.2",
+	"publisher": "mechatroner",
+	"icon": "rainbow_csv_logo.png",
+	"engines": {
+		"vscode": "^1.19.0"
+	},
+	"keywords": [
+		"csv",
+		"tsv",
+		"highlight"
+	],
+	"categories": [
+		"Other",
+		"Languages"
+	],
+	"activationEvents": [
+		"onLanguage:CSV",
+		"onLanguage:TSV",
+		"onLanguage:CSV (semicolon)",
+		"onLanguage:CSV (pipe)"
+	],
+	"main": "./extension",
+	"contributes": {
+		"configuration": {
+			"type": "object",
+			"title": "Rainbow CSV",
+			"properties": {
+				"rainbow_csv.enable_auto_csv_lint": {
+					"type": "boolean",
+					"default": true,
+					"description": "Enables automatic linting/checking of opened csv files"
+				}
+			}
+		},
+		"languages": [
+			{
+				"id": "CSV",
+				"extensions": [
+					".csv"
+				]
+			},
+			{
+				"id": "TSV",
+				"extensions": [
+					".tsv",
+					".tab"
+				]
+			},
+			{
+				"id": "CSV (pipe)",
+				"extensions": []
+			},
+			{
+				"id": "CSV (semicolon)",
+				"extensions": []
+			}
+		],
+		"commands": [
+			{
+				"command": "extension.CSVLint",
+				"title": "CSV Lint"
+			},
+			{
+				"command": "extension.SetVirtualHeader",
+				"title": "SetVirtualHeader"
+			},
+			{
+				"command": "extension.RBQL",
+				"title": "RBQL"
+			},
+			{
+				"command": "extension.QueryHere",
+				"title": "QueryHere"
+			}
+		],
+		"grammars": [
+			{
+				"language": "CSV",
+				"scopeName": "text.csv",
+				"path": "./syntaxes/csv.tmLanguage.json"
+			},
+			{
+				"language": "TSV",
+				"scopeName": "text.tsv",
+				"path": "./syntaxes/tsv.tmLanguage.json"
+			},
+			{
+				"language": "CSV (pipe)",
+				"scopeName": "text.psv",
+				"path": "./syntaxes/pipe_simple.tmLanguage.json"
+			},
+			{
+				"language": "CSV (semicolon)",
+				"scopeName": "text.scsv",
+				"path": "./syntaxes/scsv.tmLanguage.json"
+			}
+		]
+	},
+	"capabilities": {
+		"hoverProvider": "true"
+	},
+	"devDependencies": {
+		"vscode": "^1.1.6"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/mechatroner/vscode_rainbow_csv"
+	},
+	"__metadata": {
+		"id": "3792588c-3d35-442d-91ea-fe6a755e8155",
+		"publisherId": "0d5438b6-325a-4f88-aa28-6192aa2cf2a6",
+		"publisherDisplayName": "mechatroner"
+	}
+}

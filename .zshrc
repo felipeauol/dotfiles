@@ -74,13 +74,6 @@ source $ZSH/oh-my-zsh.sh
 export PATH_PYTHON='/usr/local/opt/python/libexec/bin'
 export PATH=$PATH_PYTHON:$PATH
 
-alias dps="docker ps"
-alias dpa="docker ps -a"
-alias di="docker images"
-alias dip="docker inspect --format '{{ .NetworkSettings.IPAddress }}'"
-alias de="docker exec"
-alias dex="docker exec -it"
-
 # User configuration
 
 # export MANPATH="/usr/local/man:$MANPATH"

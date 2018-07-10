@@ -2,7 +2,7 @@
 	name = Felipe de Oliveira
 	email = felipe.auol@gmail.com
 [core]
-	editor = code --wait
+	editor = vim 
 [filter "lfs"]
 	clean = git-lfs clean -- %f
 	smudge = git-lfs smudge -- %f

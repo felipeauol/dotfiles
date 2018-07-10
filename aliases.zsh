@@ -64,9 +64,9 @@ alias sps="spotify status"
 
 #kubectl
 
-alias k='kubectl'
 alias k2='kubectl --context=cst2'
 alias k3='kubectl --context=cst3'
 alias k4='kubectl --context=cst4'
+alias ks='kubectl --context=staging'
 alias kc='kubectl config use-context'
-alias ks='kubectl --namespace=staging'
+
