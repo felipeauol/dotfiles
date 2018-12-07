@@ -34,31 +34,28 @@ brew 'trash'
 brew 'wget'
 
 # Development
-brew 'php72'
-brew 'php72-intl'
-brew 'php72-imagick'
+brew 'php'
 brew 'mysql'
 
 # Apps
 cask '1password'
 cask 'cloudapp'
+cask 'charles'
 cask 'docker'
 cask 'firefox'
 cask 'flux'
 cask 'google-backup-and-sync'
 cask 'google-chrome'
 cask 'google-chrome-canary'
-cask 'gpgtools'
+cask 'gpg-suite'
 cask 'hyper'
 cask 'iterm2'
 cask 'java'
-cask 'sequel-pro'
+cask 'ngrok'
+cask 'postman'
 cask 'spotify'
 cask 'slack'
-cask 'torbrowser'
-cask 'vagrant'
-cask 'virtualbox'
-cask 'virtualbox-extension-pack'
+cask 'tor-browser'
 cask 'visual-studio-code'
 cask 'vlc'
 
@@ -71,4 +68,6 @@ cask 'font-source-serif-pro'
 
 # Install Mac App Store apps
 mas 'Magnet', id: 441258766 
-mas 'CopyClip', id: 595191960
+mas 'CopyClip 2 - Clipboard Manager', id: 1020812363
+mas 'Xcode', id: 497799835
+mas, 'Toggl Desktop', id: 957734279
