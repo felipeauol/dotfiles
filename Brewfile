@@ -26,16 +26,18 @@ brew 'homebrew/dupes/grep'
 brew 'awscli'
 brew 'git'
 brew 'hub'
-brew 'tree'
 brew 'mackup'
 brew 'mas'
 brew 'node'
 brew 'trash'
+brew 'tree'
 brew 'wget'
+brew 'yarn'
 
 # Development
-brew 'php'
 brew 'mysql'
+brew 'python'
+brew 'php'
 
 # Apps
 cask '1password'
@@ -60,6 +62,7 @@ cask 'visual-studio-code'
 cask 'vlc'
 
 # Fonts
+cask 'font-fira-code'
 cask 'font-inconsolata-for-powerline'
 cask 'font-source-code-pro-for-powerline'
 cask 'font-source-code-pro'

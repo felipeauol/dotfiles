@@ -22,9 +22,10 @@ alias bear="open -a Bear"
 alias dotfiles="cd $DOTFILES"
 alias library="cd $HOME/Library"
 alias sites="cd $HOME/Sites"
-alias ss="cd /Volumes/dev/sharpspring"
-alias payments="cd /Volumes/dev/payments"
-alias femui="cd /Volumes/dev/femui"
+alias ss="cd /Volumes/dev/sharpspring && gf"
+alias payments="cd /Volumes/dev/payments && gf"
+alias femui="cd /Volumes/dev/femui && gf"
+alias api="cd /Volumes/dev/api && gf"
 
 # Vagrant
 alias v="vagrant global-status"
