@@ -98,7 +98,7 @@ module.exports = {
     bell: 'false', 
 
     // if true, selected text will automatically be copied to the clipboard
-    copyOnSelect: false
+    copyOnSelect: false,
 
     // if true, on right click selected text will be copied or pasted if no
     // selection is present (true by default on Windows)
@@ -108,6 +108,10 @@ module.exports = {
     // bellSoundURL: 'http://example.com/bell.mp3',
 
     // for advanced config flags please refer to https://hyper.is/#cfg
+
+    hyperTabs: {
+      trafficButtons: true,
+    }
   },
 
   // a list of plugins to fetch and install from npm
@@ -116,7 +120,15 @@ module.exports = {
   //   `hyperpower`
   //   `@company/project`
   //   `project#1.0.1`
-  plugins: ['hyper-spotify', 'hyper-ayu', 'gitrocket'],
+  plugins: [
+    'hyper-pane',
+    'hyper-spotify',
+    'hyper-search',
+    'hyper-tabs-enhanced',
+    'hyper-savetext',
+    'hyper-sync-settings',
+    'hyper-whimsy'
+  ],
 
   // in development, you can create a directory under
   // `~/.hyper_plugins/local/` and include it here
