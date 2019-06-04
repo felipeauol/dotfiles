@@ -60,6 +60,7 @@ cask 'slack'
 cask 'tor-browser'
 cask 'visual-studio-code'
 cask 'vlc'
+cask 'vivaldi'
 
 # Fonts
 cask 'font-fira-code'
@@ -73,4 +74,4 @@ cask 'font-source-serif-pro'
 mas 'Magnet', id: 441258766 
 mas 'CopyClip 2 - Clipboard Manager', id: 1020812363
 mas 'Xcode', id: 497799835
-mas, 'Toggl Desktop', id: 957734279
+mas 'Toggl Desktop', id: 957734279

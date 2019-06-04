@@ -24,16 +24,10 @@ alias library="cd $HOME/Library"
 alias sites="cd $HOME/Sites"
 alias ss="cd /Volumes/dev/sharpspring && gf"
 alias payments="cd /Volumes/dev/payments && gf"
-alias femui="cd /Volumes/dev/femui && gf"
+alias femui="cd /Volumes/dev/frontend-material-ui && gf"
 alias api="cd /Volumes/dev/api && gf"
-
-# Vagrant
-alias v="vagrant global-status"
-alias vup="vagrant up"
-alias vhalt="vagrant halt"
-alias vssh="vagrant ssh"
-alias vreload="vagrant reload"
-alias vrebuild="vagrant destroy --force && vagrant up"
+alias uitests="cd /Volumes/dev/qa-ui-tests && gf"
+alias papi="cd /Volumes/dev/qa-public-api-tests && gf"
 
 #Docker
 alias docrm-all="docker stop $(docker ps -a -q -f status=exited) && docker rm $(docker ps -a -q -f status=exited)"
@@ -49,12 +43,13 @@ alias grst="git fetch upstream staging && git reset upstream/staging --hard"
 alias ngrst="git fetch upstream staging-new && git reset upstream/staging-new --hard"
 alias gmsq="git merge --squash FETCH_HEAD"
 alias gfpr="echo git fetch upstream pull//head"
+alias deploy="/Volumes/dev/qa-deploy-scripts/bin/refreshStaging.sh"
+alias reset_staging="/Volumes/dev/qa-deploy-scripts/bin/resetStaging.sh"
 
 # Webdriverio
 alias selenium_server="cd ~/webdriverio-test && java -jar -Dwebdriver.gecko.driver=./geckodriver selenium-server-standalone-3.7.1.jar"
 
 # Spotify
-
 alias spp="spotify play"
 alias spalb="spotify play album"
 alias spart="spotify play artist"
@@ -64,10 +59,8 @@ alias spprev="spotify prev"
 alias sps="spotify status"
 
 #kubectl
-
 alias k2='kubectl --context=cst2'
 alias k3='kubectl --context=cst3'
 alias k4='kubectl --context=cst4'
 alias ks='kubectl --context=staging'
 alias kc='kubectl config use-context'
-
