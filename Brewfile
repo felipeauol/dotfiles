@@ -38,6 +38,7 @@ brew 'yarn'
 brew 'mysql'
 brew 'python'
 brew 'php'
+brew 'go'
 
 # Apps
 cask '1password'
@@ -69,9 +70,10 @@ cask 'font-source-code-pro-for-powerline'
 cask 'font-source-code-pro'
 cask 'font-source-sans-pro'
 cask 'font-source-serif-pro'
+cask 'font-cascadia'
+cask 'font-iosevka'
 
 # Install Mac App Store apps
+mas 'Xcode', id: 497799835
 mas 'Magnet', id: 441258766 
 mas 'CopyClip 2 - Clipboard Manager', id: 1020812363
-mas 'Xcode', id: 497799835
-mas 'Toggl Desktop', id: 957734279

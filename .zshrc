@@ -11,7 +11,7 @@ export ZSH=/Users/felipedeoliveira/.oh-my-zsh
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
-ZSH_THEME="agnoster"
+ZSH_THEME="powerlevel10k/powerlevel10k"
 DEFAULT_USER=felipedeoliveira
 # Set list of themes to load
 # Setting this variable when ZSH_THEME=random
@@ -63,17 +63,24 @@ DEFAULT_USER=felipedeoliveira
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
+  alias-finder
   git 
-  git-extras 
+  git-extras
   osx
+  web-search
   zsh-autosuggestions
 )
+
+export DEV="/Volumes/dev"
 
 source $ZSH/oh-my-zsh.sh
 
 # For SS Docker-Compose DK
 export PATH_PYTHON='/usr/local/opt/python/libexec/bin'
 export PATH=$PATH_PYTHON:$PATH
+export GOOGLE_APPLICATION_CREDENTIALS='/Users/felipedeoliveira/sandbox/tap-tempo/client_secrets.json'
+
+export PYTHONPATH='/Volumes/dev/jira-etl'
 
 # User configuration
 
@@ -103,6 +110,9 @@ export PATH=$PATH_PYTHON:$PATH
 # Example aliases
 source $HOME/aliases.zsh
 
+# cheat
+export CHEAT_CONFIG_PATH="$HOME/.dotfiles/cheat/conf.yml"
+
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
@@ -112,3 +122,11 @@ if [ -f '/Users/felipedeoliveira/google-cloud-sdk/path.zsh.inc' ]; then . '/User
 
 # The next line enables shell command completion for gcloud.
 if [ -f '/Users/felipedeoliveira/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/felipedeoliveira/google-cloud-sdk/completion.zsh.inc'; fi
+
+# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
+[[ -f ~/.p10k.zsh ]] && source ~/.p10k.zsh
+
+# Make the JDK included in Android Studio and the installed Android SDK available to Appium.
+export JAVA_HOME='/Applications/Android Studio.app/Contents/jre/jdk/Contents/Home'
+export PATH="$JAVA_HOME/bin:$PATH"
+export ANDROID_HOME=~/Library/Android/sdk
